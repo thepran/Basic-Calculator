@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="icon/calculator.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <div class="input">0</div>
+          <div class="result" id="result"></div>
+        </div>
+        <div class="calculator-keys">
+          <button class="functions clear" data-action="clear" value="clear">
+            AC
+          </button>
+
+          <button
+            class="functions percent"
+            data-action="percent"
+            value="/100"
+            data-face="%"
+          >
+            %
+          </button>
+          <button
+            class="functions divide"
+            data-action="operator"
+            value="/"
+            data-face="&#xF7;"
+          >
+            &#xF7;
+          </button>
+          <button
+            class="functions multiply"
+            data-action="operator"
+            value="*"
+            data-face="&#215;"
+          >
+            &#215;
+          </button>
+          <button
+            class="functions subtract"
+            data-action="operator"
+            value="-"
+            data-face="-"
+          >
+            -
+          </button>
+          <button
+            class="functions add"
+            data-action="operator"
+            value="+"
+            data-face="+"
+          >
+            +
+          </button>
+          <button class="equals" data-action="equals">=</button>
+          <button
+            class="functions backspace material-symbols-outlined"
+            data-action="back"
+          >
+            backspace
+          </button>
+          <button class="number" data-action="number" value="7" data-face="7">
+            7
+          </button>
+          <button class="number" data-action="number" value="8" data-face="8">
+            8
+          </button>
+          <button class="number" data-action="number" value="9" data-face="9">
+            9
+          </button>
+          <button class="number" data-action="number" value="4" data-face="4">
+            4
+          </button>
+          <button class="number" data-action="number" value="5" data-face="5">
+            5
+          </button>
+          <button class="number" data-action="number" value="6" data-face="6">
+            6
+          </button>
+          <button class="number" data-action="number" value="1" data-face="1">
+            1
+          </button>
+          <button class="number" data-action="number" value="2" data-face="2">
+            2
+          </button>
+          <button class="number" data-action="number" value="3" data-face="3">
+            3
+          </button>
+          <button class="number" data-action="number" value="0" data-face="0">
+            0
+          </button>
+
+          <button class="number" data-action="decimal" value="." data-face=".">
+            .
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <a href="https://twitter.com/pranydotin" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https:github.com/thepran" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://codepen.io/thepran" target="_blank">
+        <i class="fa-brands fa-codepen"></i>
+      </a>
+    </footer>
+    <div class="unload"></div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7a31ca3e04.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
